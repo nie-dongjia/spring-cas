@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-cas-client
+  profiles:
+    active: dev
+  jackson:
+    time-zone: GMT+8
+server:
+  port: 9600
+  servlet:
+    context-path: /spring-cas-client
+
+
