@@ -5,7 +5,7 @@ cas:
   #认证中心登录地址
   server-login-url:  http://sso.op-platform.cn/login
   #后端服务地址
-  client-host-url: http://localhost:9600
+  client-host-url: http://localhost:9700
   validation-type: cas3
 
 
