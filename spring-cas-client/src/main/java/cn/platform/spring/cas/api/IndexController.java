@@ -28,5 +28,11 @@ public class IndexController {
         LocalDateTime time = LocalDateTime.now();
         return time.toString();
     }
+    // 获取当前用户
+    @GetMapping(value = "current-user-info")
+    public Object getCurrentUserInfo() {
+        LocalDateTime time = LocalDateTime.now();
+        return time.toString();
+    }
 
 }
