@@ -9,6 +9,7 @@
 package cn.platform.spring.cas.api;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,7 +30,7 @@ public class IndexController {
         return time.toString();
     }
     // 获取当前用户
-    @GetMapping(value = "current-user-info")
+    @PostMapping(value = "current-user-info")
     public Object getCurrentUserInfo() {
         LocalDateTime time = LocalDateTime.now();
         return time.toString();

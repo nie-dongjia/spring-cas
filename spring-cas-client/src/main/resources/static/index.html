@@ -6,5 +6,24 @@
 </head>
 <body>
 应用client1
+<!--绝对路径-->
+<script src="/spring-cas-client/static/js/jquery-1.12.2.min.js"></script>
+<!--或者-->
+<!--相对路径-->
+<!--<script src="./js/jquery-1.12.2.min.js"></script>-->
+<script>
+    /* */
+    $(function () {
+        $.ajax({
+            type : 'post',
+            url : '/spring-cas-client/api/index/current-user-info',
+            data : {
+            },
+            success : function(data) {
+                alert(data)
+            }
+        });
+    });
+</script>
 </body>
 </html>
