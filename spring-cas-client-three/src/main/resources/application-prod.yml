@@ -5,10 +5,11 @@ cas:
   #认证中心登录地址
   server-login-url:  sso.op-platform.cn/login
   #后端服务地址
-  client-host-url: http://localhost:9700
+  client-host-url: http://localhost:9800
 
 #自定义的退出url，退出成功后跳转到 http://cas.client1.com:9002/logout/success
 casClientLogoutUrl:   http://cas.server.com:8443/cas/logout?service=http://cas.client1.com:9002/logout/success
+
 
 
 
