@@ -30,7 +30,8 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
         registry.addMapping("/**")
                 .allowedOrigins("*")
                 .allowedHeaders("*")
-                .allowedMethods("*").allowCredentials(true)
+                .allowedMethods("*")
+                .allowCredentials(true)
                 .exposedHeaders(HttpHeaders.SET_COOKIE);
     }
 }
